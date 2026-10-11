@@ -36,7 +36,7 @@ body {
   margin: 0 auto;
 }
 
-/* Navbar */
+/* Navbar & Tombol Kembali */
 .site-header {
   position: sticky;
   top: 0;
@@ -51,6 +51,35 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 1.2rem 0;
+}
+
+/* Kelompok Sisi Kiri (Tombol Kembali & Logo) */
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+/* Tombol Kembali (Kecil, Bulat, Menempel di Kiri) */
+.back-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--border-color);
+  color: var(--text-main);
+  font-size: 0.8rem;
+  flex-shrink: 0;
+  transition: all 0.2s ease;
+}
+
+.back-btn:hover {
+  background-color: rgba(217, 119, 6, 0.2);
+  border-color: var(--primary);
+  color: var(--primary);
 }
 
 .logo {
